@@ -42,7 +42,8 @@ defmodule CurrencyConverter.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:mix_test_watch, "~> 1.0", only: :dev, runtime: false},
-      {:ex_unit_notifier, "~> 0.1", only: :test}
+      {:ex_unit_notifier, "~> 0.1", only: :test},
+      {:credo, "~> 1.1.0", only: [:dev, :test], runtime: false}
     ]
   end
 

@@ -7,5 +7,6 @@ defmodule CurrencyConverterWeb.Router do
 
   scope "/api", CurrencyConverterWeb do
     pipe_through :api
+    resources "/currencies", CurrencyController, except: [:new, :edit]
   end
 end
